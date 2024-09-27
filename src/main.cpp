@@ -2,6 +2,8 @@
 #include "SimpleMLP.h"
 #include <tflm_esp32.h>
 #include <eloquent_tinyml.h>
+#include "esp_system.h"
+#include "esp32-hal-cpu.h"  // For CPU frequency
 
 // Needs min of 6k ish for it work properly
 #define ARENA_SIZE 6000
@@ -30,5 +32,16 @@ void loop() {
     Serial.print("It takes ");
     Serial.print(simpleMLP.benchmark.microseconds());
     Serial.println("us for a single prediction");
+
+
+
+    Serial.print("CPU Frequency: ");
+    Serial.print(getCpuFrequencyMhz());
+    Serial.println(" MHz");
+
+    // Print free heap memory
+    Serial.print("Free heap memory: ");
+    Serial.print(esp_get_free_heap_size());
+    Serial.println(" bytes");
     delay(1000);
 }
