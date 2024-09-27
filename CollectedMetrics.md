@@ -4,9 +4,9 @@
 
 **Flash Total**: 8 MiB  (power of 2)
 
-**Unique Manufacturer Serial Number**: TBA
+**Unique Manufacturer Serial Number**: 806599A243DC
 
-**Mac Address**: TBA
+**Mac Address**: 80:65:99:A2:43:DC
 
 #### CAPPIMU Dataset
 
