@@ -1,7 +1,5 @@
 #include <Arduino.h>
-#include "conv_mlp_model.h"
-// include the runtime specific for your board
-// either tflm_esp32 or tflm_cortexm
+#include "SimpleMLP.h"
 #include <tflm_esp32.h>
 // now you can include the eloquent tinyml wrapper
 #include <eloquent_tinyml.h>
@@ -10,7 +8,7 @@
 // when developing a new model, start with a high value
 // (e.g. 10000), then decrease until the model stops
 // working as expected
-#define ARENA_SIZE 2000
+#define ARENA_SIZE 6000
 
 Eloquent::TF::Sequential<TF_NUM_OPS, ARENA_SIZE> convMLP;
 
@@ -30,9 +28,9 @@ void setup() {
 // #endif
 
     delay(3000);
-    Serial.println("__TENSORFLOW CONV MLP__");
+    Serial.println("__TENSORFLOW MLP__");
 
-    while (!convMLP.begin(conv_mlp_model).isOk())
+    while (!convMLP.begin(SimpleMLP).isOk())
         Serial.println(convMLP.exception.toString());
 }
 
