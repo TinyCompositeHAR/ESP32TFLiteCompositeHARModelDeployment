@@ -13,7 +13,7 @@
 
 // automatically configure network
 #define TF_NUM_INPUTS 900
-#define TF_NUM_OUTPUTS 1
+#define TF_NUM_OUTPUTS 21
 #define TF_NUM_OPS 2
 #define TF_OP_SOFTMAX
 #define TF_OP_FULLYCONNECTED
