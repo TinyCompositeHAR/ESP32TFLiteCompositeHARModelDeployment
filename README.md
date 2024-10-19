@@ -54,6 +54,14 @@ board which deploys a simple [MLP](include/SimpleMLP.h) to ESP32-S3 Dev Kit.
 For model training etc., please refer to
 [this repository](https://github.com/TinyCompositeHAR/LowComputeCompositeADLModels).
 
+### Acknowledgment
+
+To speed the development time, compilation, and deployment, I have used the
+[EloquentTinyML](https://github.com/eloquentarduino/EloquentTinyML/tree/5d3636f8ab5eddb23691c79e2dd14dd5858f8be3) library as
+project dependency developed and
+maintained by [eloquent arduino](https://github.com/eloquentarduino) which makes it
+criminally easy to deploy TensorFlow Lite Micro models on ESP32 boards.
+
 &#160;
 
 <div align="center">Copyright &copy; 2024-present 
