@@ -67,3 +67,10 @@ criminally easy to deploy TensorFlow Lite Micro models on ESP32 boards.
 <div align="center">Copyright &copy; 2024-present 
      <a href="https://github.com/Inmoresentum" target="_blank">Inmoresentum</a>
 </div>
+
+<h6 align="center">
+   <a href="LICENSE.md">
+      <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=CC-BY-NC-ND-4.0&colorA=FFA500&colorB=FF69B4"
+         alt="whatever" style="border-radius: 5px"/>
+   </a>
+</h6>
